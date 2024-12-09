@@ -1,23 +1,24 @@
 package com.thetestingacademy.sampleCheck;
 
-import io.restassured.RestAssured;
-
-public class APITest003NoDesignPattern {
-    public void step1(){
-        System.out.println("step 1 ");
+public class APITest003BuilderPatternDesignPattern {
+   public APITest003BuilderPatternDesignPattern step1(){
+       System.out.println("Step1 is started");
+       System.out.println("Step1 is end");
+       return this;
+   }
+    public APITest003BuilderPatternDesignPattern step2(){
+        System.out.println("Step2 is started");
+        System.out.println("Step2 is end");
+        return this;
     }
-    public void step2(){
-        System.out.println("step 2 ");
+    public APITest003BuilderPatternDesignPattern step3(String name){
+        System.out.println("Step3 is started");
+        System.out.println("Step3 is end");
+        return this;
     }
-    public void step3(String s1){
-        System.out.println("step 3 ");
-    }
-
 
     public static void main(String[] args) {
-        APITest003NoDesignPattern np = new APITest003NoDesignPattern();
-        np.step1();
-        np.step2();
-        np.step3("Suraj");
+        APITest003BuilderPatternDesignPattern bp =new APITest003BuilderPatternDesignPattern();
+        bp.step1().step2().step3("Suraj");
     }
 }

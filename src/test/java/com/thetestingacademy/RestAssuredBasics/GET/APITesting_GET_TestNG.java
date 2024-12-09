@@ -13,7 +13,5 @@ public class APITesting_GET_TestNG {
                 .when()
                 .get()
                 .then().log().all().statusCode(200);
-
     }
-
 }

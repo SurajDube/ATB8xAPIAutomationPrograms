@@ -1,7 +1,16 @@
 package com.thetestingacademy.sampleCheck;
 
-public class APITest001 {
+import io.restassured.RestAssured;
+
+public class APITest002 {
     public static void main(String[] args) {
-        System.out.println("Hello");
+        RestAssured
+                .given()
+                    .baseUri("https://restful-booker.herokuapp.com")
+                    .basePath("/booking/1")
+                .when()
+                    .get()
+                .then()
+                    .log().all().statusCode(200);
     }
 }
