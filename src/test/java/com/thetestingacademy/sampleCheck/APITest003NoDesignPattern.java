@@ -1,7 +1,5 @@
 package com.thetestingacademy.sampleCheck;
 
-import io.restassured.RestAssured;
-
 public class APITest003NoDesignPattern {
     public void step1(){
         System.out.println("step 1 ");
