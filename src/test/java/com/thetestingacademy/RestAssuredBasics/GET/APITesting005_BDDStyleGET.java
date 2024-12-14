@@ -20,7 +20,7 @@ public class APITesting005_BDDStyleGET {
 
     @Test
     public void test_GET_MethodNegative() {
-        String pincode_Negative = "-001";
+        String pincode_Negative = "-10";
         RestAssured
                 .given()
                 .baseUri("https://www.zippopotam.us/")
