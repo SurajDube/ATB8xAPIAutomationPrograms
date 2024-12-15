@@ -1,4 +1,4 @@
-package com.thetestingacademy.RestAssuredBasics.GET;
+package com.thetestingacademy.RestAssuredBasicsCRUD.GET;
 
 import io.qameta.allure.Description;
 import io.restassured.RestAssured;
