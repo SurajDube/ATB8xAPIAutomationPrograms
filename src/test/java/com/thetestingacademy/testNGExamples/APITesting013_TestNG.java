@@ -26,9 +26,4 @@ public class APITesting013_TestNG {
         System.out.println("4");
     }
 
-
-
-
-
-
 }

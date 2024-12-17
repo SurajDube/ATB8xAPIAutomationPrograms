@@ -17,8 +17,5 @@ public class APITesting017_TestNG_Parameter {
         if (value.equalsIgnoreCase("firefox")) {
             System.out.println("Start my Firefox");
         }
-
     }
-
-
 }
